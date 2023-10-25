@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <button id="toggleHeader">Toggle Header</button>
+<div id="headerContainer">
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+</div>
+
+    <section>
+        <div class="container">
+            <div class="left A">
+                <p class="tit">
+                    <br><span>webcoder</span>
+                </p>
+                <p class="tit">
+             <br><span>fronted developer</span>
+                </p>
+                <p></p>
+                <button>About me</button>
+            </div>
+            <div class="right A">
+                <div class="shape"></div>
+                <img src="pic2.jpg" alt="">
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="about">
+                <div class="ab-img B">
+                    <img src="pic1.jpeg" >
+                </div>
+                <div class="info B">
+                    <h4>About me</h4>
+                    <p>Welcome to my personal portfolio.</p>
+                    <button class="CV">Download CV</button>
+        
+                </div>
+            </div>
+        </div>
+        <div class="cont3">
+            <h4>My Work</h4>
+            <div class="box">
+                <div class="box3">
+                    <h3>Web devloper</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non officiis, nostrum, perferendis neque voluptates obcaecati dicta eaque, ipsa magnam excepturi sint asperiores error eveniet ab. Aperiam dicta quos a quae!</p>
+                    <div class="social">
+                        <a href=""> <i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+               
+                  <div class="box3">
+                     <h3>Marketing</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium totam, dicta enim aliquid quaerat maxime, officiis minus blanditiis in dignissimos provident soluta natus corporis praesentium voluptate dolor tempora facere corrupti.</p>
+                     <div class="social">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                     </div>
+                   </div>
+                 <div class="box3">
+                    <h3>Projects</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium totam, dicta enim aliquid quaerat maxime, officiis minus blanditiis in dignissimos provident soluta natus corporis praesentium voluptate dolor tempora facere corrupti.</p>
+                <div class="social">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <script>
+            document.getElementById("toggleHeader").addEventListener("click", function () {
+              const headerContainer = document.getElementById("headerContainer");
+              headerContainer.classList.toggle("hidden");
+            });
+          </script>
+          
+        <footer>
+            <div>
+                <p>Webcoder company <br>Any city,any place <br>india</p>
+
+            </div>
+            <div>Privacy police</div>
+            <div>
+                <p>Contact: <br>
+                +91 9937245214 <br>
+            Email:subhamjyotibehera791@gmail.com <br>
+        </p>
+            </div>
+        </footer>    
+
+</body>
+</html>

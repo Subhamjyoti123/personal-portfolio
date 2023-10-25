@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color:white ;
+}
+body {
+    background: #242121;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    background-color:lightcyan;
+    height: 70px;
+    width: 100%;
+
+}
+
+nav{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+    list-style: none;
+}
+h2{
+    color:rgb(175, 7, 97);
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+ul li a{
+    padding: 5px 15px;
+    color:darkblue;
+    text-transform:capitalize;
+    margin: 10px;
+}
+ul li a:hover{
+    background:yellow ;
+    border-radius: 15%;
+    color:black;
+    font-weight: bold;
+    box-shadow: 0 0 1em blue;
+}
+.container{
+    width: 80%;
+    height: 70vh;
+    margin: 6% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.A{
+    width: 50%;
+    height: 80%;
+    text-align: center;
+    perspective: 800px;
+}
+.tit{
+    font-size: 1.2em;
+    word-spacing: 5px;
+    text-transform: capitalize;
+    line-height:1.5;
+
+}
+span{
+    color: yellow;
+    font-size: 1.6em;
+    text-shadow: 1px 1px yellow;
+}
+p{
+    margin: 0.8em;
+
+}
+button{
+    margin: 2em;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 80px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: black;
+    background: yellow;
+    box-shadow: 0 0 0.5em yellow;
+    transition: all 0.1s linear;
+}
+button:hover{
+    box-shadow: 0 0 0.8em blue;
+    height: 80%;
+    background: yellow;
+    clip-path: polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);
+    animation: run 4s linear infinite alternate-reverse;
+}
+@keyframes run{
+    100%{
+        transform: translate(-30px) rotate(20deg);
+    }
+}
+.right img{
+    width: 200px;
+    position: relative;
+    top: 20%;
+    right: 4%;
+    filter: drop-shadow(0 0 .3em rgb(44, 52, 67))
+    saturate(170%) brightness(100%);
+    animation: up-down 4s ease-in-out infinite alternate-reverse;
+}
+@keyframes up-down{
+    0%{
+        transform: translateZ(-80%);
+    }
+    100%{
+        transform: translateY(-35px)translateZ(50px);
+    }
+}
+.ab-img{
+    width: 100%;
+    height: 300px;
+
+}
+.cont2{
+    width: 70%;
+    height: 60vh;
+
+}
+.cont2{
+    margin: auto;
+    background: #242121;
+    box-shadow: 0 0 1em black;
+    display: grid;
+    place-items: center;
+}
+.about{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.B{
+    height: 100%;
+
+}
+.info{
+    width: 60%;
+    padding: 6px;
+}
+.info >h4{
+    margin-top: 0;
+}
+.cont3{
+    margin: 2em auto;
+}
+.box{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h4{
+    padding: 1em;
+    text-align: center;
+    color: yellow;
+    font-size: 1.4em;
+}
+h3{
+   color: cyan; 
+}
+.box{
+    width: 25%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+    border: 2px solid yellow;
+    box-shadow: 0 0 1em yellow;
+
+}
+.social{
+    width: fit-content;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    background: green;
+    border: 3px solid white;
+}
+.social a{
+    position:relative;
+    z-index: 2;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    font-size: 30px;
+    padding: 4px;
+}
+.social:hover{
+    box-shadow: 0 0 .8em red;
+
+
+}
+.social a:before{
+content: '';
+position: absolute;
+top: 100%;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: red;
+transition: 0.3s;
+z-index: -1;
+
+}.social a:hover:before{
+    top:0%;
+    left:0;
+}
+footer{
+    margin: 4em auto 5px auto;
+    height:100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 .3em grey;
+}
+.hidden {
+    display: none;
+  }
+  
